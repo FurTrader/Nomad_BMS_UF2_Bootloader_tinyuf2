@@ -1,3 +1,8 @@
+Customized for the Nomad BMS by Overkill Solar
+
+TODO: figure out how to make a new favicon.
+
+
 # TinyUF2 Bootloader
 
 [![Build Status](https://github.com/adafruit/tinyuf2/workflows/Build/badge.svg)](https://github.com/adafruit/tinyuf2/actions)[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
