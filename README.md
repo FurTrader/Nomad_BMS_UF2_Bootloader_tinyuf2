@@ -1,4 +1,4 @@
-Customized for the Nomad BMS by Overkill Solar
+Customized for the Nomad BMS by Overkill Solar, which runs on a ESP32-S3
 
 TODO: figure out how to make a new favicon.
 
