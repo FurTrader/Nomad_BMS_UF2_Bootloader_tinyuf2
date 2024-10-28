@@ -345,7 +345,7 @@ void board_timer_stop(void) {
 
 #if CONFIG_IDF_TARGET_ESP32S3
 #include "hal/usb_serial_jtag_ll.h"
-#include "hal/usb_fsls_phy_ll.h"
+//#include "hal/usb_fsls_phy_ll.h"
 
 static void hw_cdc_reset_handler(void *arg) {
   portBASE_TYPE xTaskWoken = 0;
