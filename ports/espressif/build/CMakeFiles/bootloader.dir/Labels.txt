@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/build/CMakeFiles/bootloader
+D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/build/CMakeFiles/bootloader.rule
+D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/build/CMakeFiles/bootloader-complete.rule
+D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

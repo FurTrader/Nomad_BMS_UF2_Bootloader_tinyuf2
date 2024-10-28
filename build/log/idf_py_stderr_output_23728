@@ -1,0 +1,6 @@
+CMake Error at ports/family_support.cmake:17 (message):
+  BOARD not specified
+Call Stack (most recent call first):
+  CMakeLists.txt:3 (include)
+
+

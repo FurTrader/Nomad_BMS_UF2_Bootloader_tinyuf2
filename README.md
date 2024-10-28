@@ -2,6 +2,21 @@ Customized for the Nomad BMS by Overkill Solar, which runs on a ESP32-S3
 
 TODO: figure out how to make a new favicon.
 
+### notes about bullshit
+`C:\Users\user\esp\esp-idf\install.bat`     
+`%userprofile%\esp\esp-idf\install.bat`      
+ 
+%userprofile% is to CMD as .$HOME is to powershell
+
+get_idf is a linux command, instead use:     
+`cmd: %userprofile%\esp\esp-idf\export.bat`     
+`ps: .$HOME/esp/esp-idf/export.ps1`     
+
+
+Not sure why but this was helpful:    
+`cmake -DVENDOR=espressif -DBOARD=Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram -DCOMPILER=xtensa-esp32 -S . -B build -GNinja`
+
+
 ### Setup before building
 I had to do a bunch of stuff to build this. Starting from where I can build the Nomad firmware:     
 Working from the powershell terminal inside VSCODE/PlatformIO:    
@@ -14,8 +29,8 @@ Change the execution policy so the following will run: `Set-ExecutionPolicy -Exe
 check execution policy: `Get-ExecutionPolicy -List`     
 (might want to change it back with `Set-ExecutionPolicy -ExecutionPolicy Allsigned -Scope LocalMachine`)       
 run the install scripts for ESP-IDF:
-  `.$HOME/esp/esp-idf/install`       
-  `.$HOME/esp/esp-idf/export.ps1`      
+`.$HOME/esp/esp-idf/install`       
+`.$HOME/esp/esp-idf/export.ps1`      
 `git submodule update --init --recursive`       
 `cd D:\Public\Nomad_BMS_UF2_Bootloader_tinyuf2\tools`    
 `python get_deps.py esp32s3`      
@@ -37,9 +52,7 @@ rename python.exe in C:\Users\user.platformio\penv\Scripts (revert this change l
 `make BOARD=Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram all`      
 
 ### success?
-If the bootloader was successfully built, the output will say:     
->Successfully created esp32s3 image.
->Generated D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/_build/Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram/bootloader/bootloader.bin
+no.
 
 ### To flash the bootloader:
 set the right com port     
