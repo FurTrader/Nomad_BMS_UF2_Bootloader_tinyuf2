@@ -9,7 +9,7 @@ install chocolatey
 Install MAKE: `choco install make`       
 `cd C:\Users\user\esp\esp-idf\tools`     
 setup python environment. `python idf_tools.py install-python-env`     
-if this fails with "virtual environment already exixts" or something, delete or rename python.exe in C:\Users\user\.platformio\penv\Scripts and retry      
+if this fails with "virtual environment already exixts" or something, rename python.exe in C:\Users\user\.platformio\penv\Scripts and retry (revert this change later)      
 Change the execution policy so the following will run: `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine`    
 run the install scripts for ESP-IDF:
   `.$HOME/esp/esp-idf/install`       
