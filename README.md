@@ -20,7 +20,7 @@ run the install scripts for ESP-IDF:
 `cd D:\Public\Nomad_BMS_UF2_Bootloader_tinyuf2\tools`    
 `python get_deps.py esp32s3`      
 `cd D:\Public\Nomad_BMS_UF2_Bootloader_tinyuf2\ports\espressif`      
-`make BOARD=[whatever] all`
+`make BOARD=Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram all`
 
 I'm sure I forgot something...     
 
