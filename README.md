@@ -30,11 +30,26 @@ to build the firmware, I have to restore that version of python.
 try `where.exe python` to see whats going on         
 
 ### Might have to do this EVERY TIME you go back and build the bootloader again:     
+rename python.exe in C:\Users\user.platformio\penv\Scripts (revert this change later)
 `cd D:\Public\Nomad_BMS_UF2_Bootloader_tinyuf2\ports\espressif`      
 `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine`      
 `.$HOME/esp/esp-idf/export.ps1`      
 `make BOARD=Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram all`      
 
+### success?
+If the bootloader was successfully built, the output will say:     
+>Successfully created esp32s3 image.
+>Generated D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/_build/Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram/bootloader/bootloader.bin
+
+### To flash the bootloader:
+set the right com port     
+`cd D:/Public/Nomad_BMS_UF2_Bootloader_tinyuf2/ports/espressif/_build/Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram/bootloader/`    
+maybe `esptool --chip esp32s3 -b 115200 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader.bin`     
+or `esptool --chip esp32s3 -b 115200 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader.bin`    
+
+The old command specified a port, without that param it will auto detect.
+
+Future note: `esptool flash_id` can detect the com port, maybe use this for automation?     
 
 # TinyUF2 Bootloader
 

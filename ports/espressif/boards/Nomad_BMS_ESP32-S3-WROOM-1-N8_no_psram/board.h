@@ -50,10 +50,10 @@
 
 #define UF2_PRODUCT_NAME         USB_MANUFACTURER " " USB_PRODUCT
 #define UF2_BOARD_ID             "Nomad_Pathfinder_BMS_V1"
-#define UF2_VOLUME_LABEL         "OverkillSolarBMS-UF2"
+#define UF2_VOLUME_LABEL         "OKSBMS"
 #define UF2_INDEX_URL            "https://overkillsolar.com/"
 
 // Use favicon
-#define TINYUF2_FAVICON_HEADER   "favicon_matrix_256"
+#define TINYUF2_FAVICON_HEADER   "favicon_matrix_256.h"
 
 #endif
