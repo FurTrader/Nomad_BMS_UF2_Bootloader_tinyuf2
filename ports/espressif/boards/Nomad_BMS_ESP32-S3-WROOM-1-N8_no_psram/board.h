@@ -38,26 +38,6 @@
 // pin value long enough for double reset detection.
 #define PIN_DOUBLE_RESET_RC   34
 
-//--------------------------------------------------------------------+
-// LED
-//--------------------------------------------------------------------+
-
-// GPIO connected to Neopixel data
-#define NEOPIXEL_PIN          33
-
-#define NEOPIXEL_POWER_PIN    21
-#define NEOPIXEL_POWER_STATE  1
-
-// Brightness percentage from 1 to 255
-#define NEOPIXEL_BRIGHTNESS   0x10
-
-// Number of neopixels
-#define NEOPIXEL_NUMBER       1
-
-// LED for indicator and writing flash
-// If not defined neopixel will be use for flash writing instead
-#define LED_PIN               13
-#define LED_STATE_ON          1
 
 //--------------------------------------------------------------------+
 // USB UF2
@@ -65,15 +45,15 @@
 
 #define USB_VID                  0x239A
 #define USB_PID                  0x0113
-#define USB_MANUFACTURER         "Adafruit"
-#define USB_PRODUCT              "Feather ESP32-S3 No PSRAM"
+#define USB_MANUFACTURER         "Overkill_Solar"
+#define USB_PRODUCT              "Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram"
 
 #define UF2_PRODUCT_NAME         USB_MANUFACTURER " " USB_PRODUCT
-#define UF2_BOARD_ID             "ESP32-S3-Feather-revC"
-#define UF2_VOLUME_LABEL         "FTHRS3BOOT"
-#define UF2_INDEX_URL            "https://www.adafruit.com/product/5323"
+#define UF2_BOARD_ID             "Nomad_Pathfinder_BMS_V1"
+#define UF2_VOLUME_LABEL         "OverkillSolarBMS"
+#define UF2_INDEX_URL            "https://overkillsolar.com/"
 
 // Use favicon
-#define TINYUF2_FAVICON_HEADER   "favicon_adafruit_256.h"
+#define TINYUF2_FAVICON_HEADER   "favicon_matrix_256"
 
 #endif
