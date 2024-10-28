@@ -29,7 +29,11 @@ To build the bootloader, I have to remove python.exe from C:\Users\user\.platfor
 to build the firmware, I have to restore that version of python.     
 try `where.exe python` to see whats going on         
 
-
+### Might have to do this EVERY TIME you go back and build the bootloader again:     
+`cd D:\Public\Nomad_BMS_UF2_Bootloader_tinyuf2\ports\espressif`      
+`Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine`      
+`.$HOME/esp/esp-idf/export.ps1`      
+`make BOARD=Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram all`      
 
 
 # TinyUF2 Bootloader
@@ -103,7 +107,7 @@ python tools/get_deps.py --board feather_stm32f405_express
 Then compile with `all` target:
 
 ```
-make BOARD=feather_stm32f405_express all
+make BOARD=Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram all
 ```
 
 ### Flash
