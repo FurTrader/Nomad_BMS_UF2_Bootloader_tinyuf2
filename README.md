@@ -27,6 +27,7 @@ I'm sure I forgot something...
 fucking python nightmare-     
 To build the bootloader, I have to remove python.exe from C:\Users\user\.platformio\penv\Scripts     
 to build the firmware, I have to restore that version of python.     
+try `where.exe python` to see whats going on         
 
 
 
