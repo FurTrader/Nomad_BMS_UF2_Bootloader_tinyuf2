@@ -2,6 +2,31 @@ Customized for the Nomad BMS by Overkill Solar, which runs on a ESP32-S3
 
 TODO: figure out how to make a new favicon.
 
+### Setup before building
+I had to do a bunch of stuff to build this. Starting from where I can build the Nomad firmware:     
+Working from the powershell terminal inside VSCODE/PlatformIO:    
+install chocolatey     
+Install MAKE: `choco install make`       
+`cd C:\Users\user\esp\esp-idf\tools`     
+setup python environment. `python idf_tools.py install-python-env`     
+if this fails with "virtual environment already exixts" or something, delete or rename python.exe in C:\Users\user\.platformio\penv\Scripts and retry      
+Change the execution policy so the following will run: `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine`    
+run the install scripts for ESP-IDF:
+  `.$HOME/esp/esp-idf/install`       
+  `.$HOME/esp/esp-idf/export.ps1`      
+`git submodule update --init --recursive`       
+`cd D:\Public\Nomad_BMS_UF2_Bootloader_tinyuf2\tools`    
+`python get_deps.py esp32s3`      
+`cd D:\Public\Nomad_BMS_UF2_Bootloader_tinyuf2\ports\espressif`      
+
+I'm sure I forgot something...     
+
+fucking python nightmare-     
+To build the bootloader, I have to remove python.exe from C:\Users\user\.platformio\penv\Scripts     
+to build the firmware, I have to restore that version of python.     
+
+
+
 
 # TinyUF2 Bootloader
 
