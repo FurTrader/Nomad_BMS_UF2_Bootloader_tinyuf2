@@ -11,6 +11,8 @@ Install MAKE: `choco install make`
 setup python environment. `python idf_tools.py install-python-env`     
 if this fails with "virtual environment already exixts" or something, rename python.exe in C:\Users\user\.platformio\penv\Scripts and retry (revert this change later)      
 Change the execution policy so the following will run: `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine`    
+check execution policy: `Get-ExecutionPolicy -List`     
+(might want to change it back with `Set-ExecutionPolicy -ExecutionPolicy Allsigned -Scope LocalMachine`)       
 run the install scripts for ESP-IDF:
   `.$HOME/esp/esp-idf/install`       
   `.$HOME/esp/esp-idf/export.ps1`      
@@ -18,13 +20,14 @@ run the install scripts for ESP-IDF:
 `cd D:\Public\Nomad_BMS_UF2_Bootloader_tinyuf2\tools`    
 `python get_deps.py esp32s3`      
 `cd D:\Public\Nomad_BMS_UF2_Bootloader_tinyuf2\ports\espressif`      
-`make BOARD=[whatever] all`
+`make BOARD=Nomad_BMS_ESP32-S3-WROOM-1-N8_no_psram all`
 
 I'm sure I forgot something...     
 
 fucking python nightmare-     
 To build the bootloader, I have to remove python.exe from C:\Users\user\.platformio\penv\Scripts     
 to build the firmware, I have to restore that version of python.     
+try `where.exe python` to see whats going on         
 
 
 
