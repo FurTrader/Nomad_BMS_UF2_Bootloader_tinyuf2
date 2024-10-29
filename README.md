@@ -2,6 +2,9 @@ Customized for the Nomad BMS by Overkill Solar, which runs on a ESP32-S3
 
 TODO: figure out how to make a new favicon.
 
+flash bootloader that andrew made: `esptool --chip esp32s3  -b 115200 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 ./bootloaders/oks_branded_v3.bin`
+
+
 ### notes about bullshit
 `C:\Users\user\esp\esp-idf\install.bat`     
 `%userprofile%\esp\esp-idf\install.bat`      
